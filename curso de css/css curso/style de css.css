@@ -26,8 +26,8 @@ nav{
 }
 
 .elemento0{
-    color: black;
-    margin-left: -2rem;
+    color: rgb(0, 0, 0);
+    margin-left: -0.5rem;
     font-size: 30px;
 }
 .elemento{
@@ -39,4 +39,25 @@ nav{
     color: black;
     padding-left: 3rem;
     font-size: 20px;
+}
+article{
+
+    text-align: center;
+    width: auto;
+}
+p{
+    text-align: justify;
+    margin: auto;
+    width: 50rem;
+    min-width: 5%;
+}
+hr{
+    color: brown;
+    width: 500px;
+}
+.lista{
+    text-align: justify;
+    margin: auto;
+    width: 40rem;
+    min-width: 5%;
 }
