@@ -48,8 +48,8 @@ article{
 p{
     text-align: justify;
     margin: auto;
-    width: 50rem;
-    min-width: 5%;
+    width: auto;
+    max-width: 70%;
 }
 hr{
     color: brown;
@@ -58,6 +58,6 @@ hr{
 .lista{
     text-align: justify;
     margin: auto;
-    width: 40rem;
-    min-width: 5%;
+    width: auto;
+    max-width: 40%;
 }
