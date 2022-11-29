@@ -15,9 +15,9 @@ header{
 }
 .indice{
     margin: auto;
-    text-align: justify;
+    text-align: left;
     width: 25rem;
-    max-width: 50%;
+    max-width: 55%;
 
 }
 
