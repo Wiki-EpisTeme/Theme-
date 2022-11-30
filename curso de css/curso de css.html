@@ -232,27 +232,27 @@
             Antes de comenzar a insertar reglas CSS en nuestro archivo de estilos y aplicar un modelo
             de caja, debemos revisar los conceptos básicos sobre estilos CSS que van a ser utilizados
             en el resto del libro.
-        </p>
+        </p><br>
         <p>
             Aplicar estilos a los elementos HTML cambia la forma en que estos son presentados en
             pantalla. Como explicamos anteriormente, los navegadores proveen estilos por defecto
             que en la mayoría de los casos no son suficientes para satisfacer las necesidades de los
             diseñadores. Para cambiar esto, podemos sobrescribir estos estilos con los nuestros
             usando diferentes técnicas.
-        </p>
+        </p><br>
         <p>
             <b>Conceptos básicos:</b> En este libro encontrará solo una introducción breve a los
             estilos CSS. Solo mencionamos las técnicas y propiedades que necesita conocer
             para entender los temas y códigos estudiados en próximos capítulos. Si considera
             que no tiene la suficiente experiencia en CSS y necesita mayor información visite
             nuestro sitio web y siga los enlaces correspondientes a este capítulo.
-        </p>
+        </p><br>
         <p>
             <b>Hágalo usted mismo:</b> Dentro de un archivo de texto vacío, copie cada código
             HTML estudiado en los siguientes listados y abra el archivo en su navegador para
             comprobar su funcionamiento. Tenga en cuenta que el archivo debe tener la
             extensión.html para ser abierto y procesado correctamente
-        </p>
+        </p><br>
     </article><hr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <article id="6">
@@ -260,12 +260,12 @@
         <p>
             Una de las técnicas más simples para incorporar estilos CSS a un documento HTML es la de
             asignar los estilos dentro de las etiquetas por medio del atributo <b>style.</b> 
-        </p>
+        </p><br>
         <p>
             El Listado 2-1 muestra un documento  <b>HTML</b> simple que contiene el elemento <"p>
             modificado por el atributo <b>style</b>  con el valor <b><i>font-size: 20px.</i> </b>Este estilo cambia el
             tamaño por defecto del texto dentro del elemento <"p> a un nuevo tamaño de <b>20 pixeles.</b> 
-        </p>
+        </p><br>
         
         <div class="lista">
             <pre>
@@ -292,9 +292,117 @@
             mantener y actualizar. Solo imagine lo que ocurriría si decide que en lugar de <b> 20 pixeles</b> el
             tamaño de cada uno de los elementos <b><"p></b> debería ser de <b> 24 pixeles.</b> Tendría que
             modificar cada estilo en cada etiqueta <b><"/p></b> en el documento completo.
+        </p><br>
+    </article><hr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    
+    <article id="7">
+        <h2>Estilos embebidos</h2>
+        <p>
+            Una mejor alternativa es insertar los estilos en la cabecera del documento y luego usar
+            referencias para afectar los elementos HTML correspondientes:
+        </p><br>
+        <p>
+            <img src="media/figura curso de css 2.png" alt="Estilos listados en la cabecera del documento.">
+            <figure><b>Listado 2-2.</b>Estilos listados en la cabecera del documento.</figure>
+        </p><br>
+        <p>
+            El elemento <"style> (mostrado en el Listado 2-2) permite a los desarrolladores
+            agrupar estilos CSS dentro del documento. En versiones previas de HTML era necesario
+            especificar qué tipo de estilos serían insertados. En HTML5 los estilos por defecto son CSS,
+            por lo tanto no necesitamos agregar ningún atributo en la etiqueta de apertura <"style>. <br><br>
+
+            El código resaltado del Listado 2-2 tiene la misma función que la línea de código del
+            Listado 2-1, pero en el Listado 2-2 no tuvimos que escribir el estilo dentro de cada
+            etiqueta <b><"p> porque todos los elementos <"p></b> ya fueron afectados. Con este método,
+            reducimos nuestro código y asignamos los estilos que queremos a elementos específicos
+            utilizando referencias. Veremos más sobre referencias en este capítulo.
+        </p><br>
+    </article>
+
+    <article id="8">
+        <h2>Archivos externos</h2>
+        <p>
+            Declarar los estilos en la cabecera del documento ahorra espacio y vuelve al código más
+            consistente y actualizable, pero nos requiere hacer una copia de cada grupo de estilos en
+            todos los documentos de nuestro sitio web. La solución es mover todos los estilos a un
+            archivo externo y luego utilizar el elemento <"link> para insertar este archivo dentro de
+            cada documento que los necesite. Este método nos permite cambiar los estilos por
+            completo simplemente incluyendo un archivo diferente. También nos permite modificar o
+            adaptar nuestros documentos a cada circunstancia o dispositivo, como veremos al final
+            del libro.
+        </p><br>
+        <p>
+            En el Capítulo 1, estudiamos la etiqueta <|link> y cómo utilizarla para insertar
+            archivos con estilos CSS en nuestros documentos. Utilizando la línea <|link
+            rel=”stylesheet” href=”misestilos.css”> le decimos al navegador que cargue el
+            archivo misestilos.css porque contiene todos los estilos necesitados para presentar el
+            documento en pantalla. Esta práctica fue ampliamente adoptada por diseñadores que ya
+            están trabajando con HTML5. La etiqueta <|link> referenciando el archivo CSS será
+            insertada en cada uno de los documentos que requieren de esos estilos:
+        </p><br>
+        <p>
+            <img src="media/figura curso de css 3.png" alt="Aplicando estilos CSS desde un archivo externo.">
+            <figure><b>Listado 2-3.</b>Aplicando estilos CSS desde un archivo externo</figure>
+        </p><br>
+        <p>
+            <b> Hágalo usted mismo:</b> De ahora en adelante agregaremos estilos CSS al archivo
+            llamado misestilos.css. Debe crear este archivo en el mismo directorio
+            (carpeta) donde se encuentra el archivo HTML y copiar los estilos CSS en su
+            interior para comprobar cómo trabajan. <br><br>
+
+            <b> Conceptos básicos:</b> Los archivos CSS son archivos de texto comunes. Al igual que
+            los archivos HTML, puede crearlos utilizando cualquier editor de texto como el
+            Bloc de Notas de Windows, por ejemplo.
+        </p><br>
+    
+
+    </article><hr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <article id="9">
+        <h2>Referencias</h2>
+        <p>
+            Almacenar todos nuestros estilos en un archivo externo e insertar este archivo dentro de
+            cada documento que lo necesite es muy conveniente, sin embargo no podremos hacerlo
+            sin buenos mecanismos que nos ayuden a establecer una específica relación entre estos
+            estilos y los elementos del documento que van a ser afectados.
+        </p><br>
+        <p>
+            Cuando hablábamos sobre cómo incluir estilos en el documento, mostramos una de las
+            técnicas utilizadas a menudo en CSS para referenciar elementos HTML. En el Listado 2-2, el
+            estilo para cambiar el tamaño de la letra referenciaba cada elemento <|p> usando la palabra
+            clave p. De esta manera el estilo insertado entre las etiquetas <|style> referenciaba cada
+            etiqueta <|p> del documento y asignaba ese estilo particular a cada una de ellas. 
+        </p>
+        <ul>Existen varios métodos para seleccionar cuáles elementos HTML serán afectados por
+            las reglas CSS: <br><br>
+            <li>referencia por la palabra clave del elemento.</li>
+            <li>referencia por el atributo id.</li>
+            <li>referencia por el atributo class.</li>
+        </ul><br><br>
+        <p>
+            Más tarde veremos que CSS3 es bastante flexible a este respecto e incorpora nuevas y
+            más específicas técnicas para referenciar elementos, pero por ahora aplicaremos solo
+            estas tres.
         </p>
     </article><hr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <article>
-    </article>
+
+    <article id="10">
+        <h2>Referenciando con palabra clave</h2>
+        <p>
+            Al declarar las reglas CSS utilizando la palabra clave del elemento afectamos cada
+            elemento de la misma clase en el documento. Por ejemplo, la siguiente regla cambiará los
+            estilos de todos los elementos <|p>:
+        </p><br>
+        <p>
+            <img src="media/figura curso de css 4.png" alt="Referenciando por palabra clave." width="auto">
+            <figure><b>Listado 2-4. </b>Referenciando por palabra clave.</figure>
+        </p><br>
+        <p>
+            
+        </p>
+    </article><hr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
