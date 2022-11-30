@@ -27,22 +27,26 @@ nav{
 
 .elemento0{
     color: rgb(0, 0, 0);
-    margin-left: -0.5rem;
+    align-content: center;
     font-size: 30px;
 }
 .elemento{
     color: black;
     padding-left: 1rem;
     font-size: 25px;
+    align-content: center;
 }
 .elemento1{
     color: black;
     padding-left: 3rem;
     font-size: 20px;
+    align-content: center;
 }
 article{
     margin: auto;
-    text-align: center;
+    align-content: center;
+    text-align: left;
+    margin: auto;
     width: auto;
 }
 p{
@@ -56,8 +60,11 @@ hr{
     width: 500px;
 }
 .lista{
-    text-align: justify;
+    align-content: center;
     margin: auto;
     width: auto;
     max-width: 40%;
+}
+h3, h2, figure, img{
+    text-align: center;
 }
