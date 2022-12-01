@@ -72,9 +72,9 @@
         <li><a href="curso de css.html#1" class="elemento1">+ Transiciones</a></li><br>
         <li><a href="curso de css.html#1" class="elemento">- Referencia rápida</a></li>
     </nav><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
+</div><hr>
 
-        <hr>
+        
     <article id="1">
         <h2>CSS y HTML</h2>
         <p>
@@ -393,16 +393,128 @@
             Al declarar las reglas CSS utilizando la palabra clave del elemento afectamos cada
             elemento de la misma clase en el documento. Por ejemplo, la siguiente regla cambiará los
             estilos de todos los elementos <|p>:
-        </p><br>
+        </p><br><br>
         <p>
             <img src="media/figura curso de css 4.png" alt="Referenciando por palabra clave." width="auto">
             <figure><b>Listado 2-4. </b>Referenciando por palabra clave.</figure>
-        </p><br>
+        </p><br><br>
         <p>
-            
+            Esta es la técnica presentada previamente en el Listado 2-2. Utilizando la palabra clave
+            p al frente de la regla le estamos diciendo al navegador que esta regla debe ser aplicada a
+            cada elemento <|p> encontrado en el documento HTML. Todos los textos envueltos en
+            etiquetas <|p> tendrán el tamaño de 20 pixeles. <br><br>
+            Por supuesto, lo mismo funcionará para cualquier otro elemento HTML. Si
+            especificamos la palabra clave span en lugar de p, por ejemplo, cada texto entre etiquetas
+            <|span> tendrá un tamaño de 20 pixeles: <br><br>
+
+            <img src="media/fugura curso de css 5.png" alt="Referenciando por otra palabra clave.">
+            <figure> <b>Listado 2-5.</b> Referenciando por otra palabra clave.</figure>
+        </p><br><br>
+        <p>
+            ¿Pero qué ocurre si solo necesitamos referenciar una etiqueta específica? ¿Debemos
+            usar nuevamente el atributo style dentro de esta etiqueta? La respuesta es no. Como
+            aprendimos anteriormente, el método de Estilos en Línea (usando el atributo style
+            dentro de etiquetas HTML) es una técnica en desuso y debería ser evitada. Para
+            seleccionar un elemento HTML específico desde las reglas de nuestro archivo CSS,
+            podemos usar dos atributos diferentes: <b>id</b> y  <b>class</b>.
         </p>
     </article><hr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+    <article id="11">
+        <h2>Referenciando con el atributo id</h2>
+        <p>
+            El atributo <b>id </b> es como un nombre que identifica al elemento. Esto significa que el valor de
+            este atributo no puede ser duplicado. Este nombre debe ser único en todo el documento. <br><br>
+            Para referenciar un elemento en particular usando el atributo id desde nuestro
+            archivo <b>CSS</b>  la regla debe ser declarada con el símbolo <b>#</b>  al frente del valor que usamos
+            para identificar el elemento: <br><br>
+
+            <img src="media/fugura curso de css 6.png" alt="Referenciando a través del valor del atributo id.">
+            <figure><b>Listado 2-6.</b> Referenciando a través del valor del atributo id.</figure>
+        </p><br><br>
+        <p>
+            La regla en el Listado 2-6 será aplicada al elemento HTML identificado con el atributo
+            <b>id=”texto1”</b>. Ahora nuestro código HTML lucirá de esta manera: <br><br>
+        <img src="media/figura curso de css 7.png" alt=" Identificando el elemento <p> a través de su atributo id.">
+        <figure><b>Listado 2-7.</b> Identificando el elemento <|p> a través de su atributo id.</figure><br><br>
+            <p>
+                El resultado de este procedimiento es que cada vez que hacemos una referencia
+                usando el identificador <b>texto1</b> en nuestro archivo CSS, el elemento con ese valor de <b>id</b>
+
+                será modificado, pero el resto de los elementos <|p>, o cualquier otro elemento en el mismo documento, no serán afectados. <br><br>
+                Esta es una forma extremadamente específica de referenciar un elemento y es normalmente utilizada para elementos más generales, como etiquetas estructurales. El
+                atributo id y su especificidad es de hecho más apropiado para referencias en Javascript, como veremos en próximos capítulos.
+            </p><br><br>
+        </p>
+    </article><hr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <article id="12">
+        <h2>Referenciando con el atributo class</h2>
+        <p>
+            La mayoría del tiempo, en lugar de utilizar el atributo <b> id</b> para propósitos de estilos es
+            mejor utilizar <b>class.</b>  Este atributo es más flexible y puede ser asignado a cada elemento
+            HTML en el documento que comparte un diseño similar: <br><br>
+
+            <img src="media/figura curso de css 8.png" alt="Referenciando por el valor del atributo class.">
+            <figure> <b>Listado 2-8.</b> Referenciando por el valor del atributo class.</figure>
+        </p><br><br>
+        <p>
+            Para trabajar con el atributo class, debemos declarar la regla CSS con un punto antes del
+            nombre. La ventaja de este método es que insertar el atributo class con el valor texto1 será
+            suficiente para asignar estos estilos a cualquier elemento que queramos: <br><br>
+            <img src="media/figura curso de css 9.png" alt="Asignando estilos a varios elementos a través del atributo class.">
+            <figure> <b>Listado 2-9.</b> Asignando estilos a varios elementos a través del atributo class.</figure>
+        </p><br><br>
+        <p>
+            Los elementos <|p> en las primeras dos líneas dentro del cuerpo del código en el
+            Listado 2-9 tienen el atributo <b>class</b>  con el valor <b>texto1.</b>  Como dijimos previamente, la
+            misma regla puede ser aplicada a diferentes elementos en el mismo documento. Por lo
+            tanto, estos dos primeros elementos comparten la misma regla y ambos serán afectados
+            por el estilo del Listado 2-8. El último elemento <|p> conserva los estilos por defecto
+            otorgados por el navegador. <br><br>
+
+            La razón por la que debemos utilizar un punto delante del nombre de la regla es que es
+            posible construir referencias más complejas. Por ejemplo, se puede utilizar el mismo valor para
+            el atributo class en diferentes elementos pero asignar diferentes estilos para cada tipo: <br><br>
+
+            <img src="media/figura curso de css 10.png" alt="Referenciando solo elementos <p> a través del valor del atributo class.">
+                <figure> <b>Listado 2-10.</b> Referenciando solo elementos <|p> a través del valor del atributo class.</figure>
+        </p><br><br>
+        <p>
+            En el Listado 2-10 creamos una regla que referencia la clase llamada texto1 pero solo
+            para los elementos de tipo <|p>. Si cualquier otro elemento tiene el mismo valor en su
+            atributo class no será modificado por esta regla en particular.
+        </p><br><br>
+    </article><hr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <article id="13">
+        <h2>Referenciando con cualquier atributo</h2>
+        <p>
+            Aunque los métodos de referencia estudiados anteriormente cubren un variado espectro
+            de situaciones, a veces no son suficientes para encontrar el elemento exacto. La última
+            versión de CSS ha incorporado nuevas formas de referenciar elementos HTML. Uno de
+            ellas es el Selector de Atributo. Ahora podemos referenciar un elemento no solo por los
+            atributos id y class sino también a través de cualquier otro atributo: <br><br>
+            <img src="media/figura curso de css 11.png" alt="Referenciando solo elementos <p> que tienen el atributo name.">
+                <figure> <b>Listado 2-11.</b> Referenciando solo elementos <|p> que tienen el atributo name.</figure>
+        </p><br><br>
+        <p>
+            La regla en el Listado 2-11 cambia solo elementos <|p> que tienen un atributo llamado
+            name. Para imitar lo que hicimos previamente con los atributos id y class, podemos
+            también especificar el valor del atributo: <br><br>
+
+            <img src="media/figura curso de css 12.png" alt="Referenciando elementos <p> que tienen un atributo name con el valor mitexto.">
+                <figure><b>Listado 2-12.</b> Referenciando elementos <|p> que tienen un atributo name con el valor mitexto.</figure>
+            <p>
+                CSS3 permite combinar “=” con otros para hacer una selección más específica: <br><br>
+
+                <img src="media/figura curso de css 13.png" alt="Nuevos selectores en CSS3.">
+                <figure><b>Listado 2-13.</b> Nuevos selectores en CSS3.</figure>
+            </p>
+        </p>
+
+    </article>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
