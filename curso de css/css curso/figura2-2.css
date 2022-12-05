@@ -1,0 +1,57 @@
+.figura2-2{
+	border: 10px solid black;
+	grid-template-areas: "cabecera cabecera cabecera";
+	width: 900px;
+	height: 1200px;
+	text-align: center;
+
+	
+}
+.cabecera{
+	grid-template-areas: "cabecera cabecera cabecera";
+	display: grid;
+	text-align: center;
+	background-color: brown;
+	margin: 1%;
+	height: 100px;
+
+}
+.cabecera2{
+	grid-template-areas: "cabecera2 cabecera2 cabecera2";
+	display: grid;
+	text-align: center;
+	background-color: brown;
+	margin: 1%;
+	height: 50px;
+}
+.cuerpo{
+	display: block;
+	text-align: center;
+	background-color: brown;
+	margin-right: 0%;
+	width: 250px;
+	height: 500px;
+	padding-right: 5rem;
+}
+.cuerpo2{
+	display: block;
+	float: right;
+	text-align: center;
+	background-color: brown;
+	margin: 1%;
+	width: 250px;
+	height: 500px;
+	padding-right: 5rem;
+}
+.pies{
+	display: grid;
+	text-align: center;
+	background-color: brown;
+	margin: 1%;
+	grid-template-areas: "pies pies pies";
+	width: 880px;
+	height: 100px;
+}
+.uno{
+
+}
