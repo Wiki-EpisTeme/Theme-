@@ -1,35 +1,62 @@
 html{
-    display: grid;
     font-family: sans-serif;
     font-size: 25px;
     background-color: rgba(255, 255, 255, 0);
-    height: max-content;
+    height: auto;
 }
-body{
-    display: flexbox;
-    grid-template-areas: "header header header" auto "nav nav nav" auto "article article article" auto;
+bodfy{
     justify-content: center;
 }
 header{
+    display:grid;
+    grid-template-areas: "header header header";
     text-align: center;
-    padding-top: 10%;
-    margin-bottom: 25rem;
-}
-
-.indice1{
-    text-align:left;
+    margin-top: 20%;
+    margin-bottom: 25%;
 
 }
-.indice{
-    justify-content: center;
-    text-align:left;
+.cabeza{
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    border-bottom: thin solid;
+    padding-right: 10%;
 }
 
-nav{
-    margin: 10%;
-    color: black;
+
+
+
+
+.caja-indice{
+    display: grid;
+    grid-template-areas: "caja-1 caja-2";
+    float: left;
     list-style-type: none;
+    font-family: sans-serif;
+    width: auto;
+    height: auto;
+    margin: auto;
+    justify-content: revert;
+    grid-column-gap: 30%;
+    margin-left: 9%;
 }
+.caja-1{
+    display: block;
+    float: left;
+    margin-left: 40%;
+    width: 500px;
+    min-width: 60%;
+    justify-content: revert;
+}
+.caja-2{
+    list-style-type: none;
+    display: block;
+    float: right;
+    width: 500px;
+    min-width:10%;
+
+}
+
 a{
     text-decoration: none;
 }
@@ -51,14 +78,17 @@ article{
     margin: auto;
     text-align: left;
     margin: auto;
-    width: auto;
+    width: 50rem;
     height: auto;
+    min-width: 20%;
 }
 p{
     text-align: justify;
     margin: auto;
     width: auto;
-    max-width: 70%;
+    min-width: 20%;
+
+
 
 }
 hr{
@@ -110,3 +140,35 @@ ul{
     min-width: initial;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
