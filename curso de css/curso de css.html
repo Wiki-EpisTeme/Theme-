@@ -231,7 +231,7 @@
 
 		<div class="lista">
 			<img src="media/figura curso de css 1.png" alt="" width="500px" >
-			<figure>Figura 2-1. Representación visual de una página web mostrada con estilos por defecto.</figure>
+			<div> <b>Figura 1-1.</b>  Representación visual de una página web mostrada con estilos por defecto.</div>
 		</div><hr><br><br><br><br><br>
 
 	<article id="4">
@@ -318,7 +318,7 @@
 				</code>
 			</pre>
 		</div>
-		<figure><b> Listado 2-1.</b> Estilos CSS dentro de etiquetas HTML</figure>
+		<div><b>Listado 2-1.</b> Estilos CSS dentro de etiquetas HTML</div>
 		<p>
 			Usar la técnica demostrada anteriormente es una buena manera de probar estilos y
 			obtener una vista rápida de sus efectos, pero no es recomendado para aplicar estilos a
@@ -339,8 +339,8 @@
 			referencias para afectar los elementos HTML correspondientes:
 		</p><br>
 		<p>
-			<img src= "media\figura curso de css 2.png" alt=Estilos "listados en la cabecera del documento.">
-			<figure><b>Listado 2-2.</b>Estilos listados en la cabecera del documento.</figure>
+			<img src= "media\figura curso de css 2.png" >
+			<div class="figura"><b>Listado 2-2.</b>Estilos listados en la cabecera del documento.</div>
 		</p><br>
 		<p>
 			El elemento <"style> (mostrado en el Listado 2-2) permite a los desarrolladores
@@ -629,7 +629,7 @@
 	</article><hr><br><br><br><br><br><br><br>
 
 	<article id="15">
-		<h1>Aplicando CSS a nuestra plantilla.</h1>
+		<h2>Aplicando CSS a nuestra plantilla.</h2>
 
 		<p>
 			Como aprendimos más temprano en este mismo capítulo, todo elemento estructural es considerado una caja y la estructura completa es presentada como un grupo de cajas. Las cajas agrupadas constituyen lo que es llamado un Modelo de Caja. <br><br>
@@ -666,7 +666,8 @@
 
 			Este modelo necesita agrupar cajas juntas para ordenarlas horizontalmente. Debido a que el contenido completo del cuerpo es creado a partir de cajas, debemos agregar un elemento <|div> para agruparlas, centrarlas y darles un tamaño específico.La nueva plantilla lucirá de este modo:
 
-				<pre class="ejemplos-largos"><code class="ejemplos-largos">
+				<pre>
+					<code>
 					<.!DOCTYPE html>
 					<.html lang="es">
 					<.head>
@@ -730,12 +731,13 @@
 						<.blockquote>Mensaje número dos<./blockquote>
 					<./aside>
 					<.footer id="pie">
-							Derechos Reservados &copy; 2010-2011
+							Derechos Reservados &.copy; 2010-2011
 					<./footer>
 					<./div>
 					<./body>
 					<./html>
-				</code></pre>
+				</code>
+			</pre>
 				<figure><b>Listado 2-25.</b> Nueva plantilla HTML5 lista para estilos CSS.</figure>
 		</p>
 		</p><br><br>
@@ -751,7 +753,7 @@
 			mencionado anteriormente. Este <.div> fue identificado con el atributo y el valor
 			id=”agrupar”, y es cerrado al final del cuerpo con la etiqueta de cierre <./div>. Este
 			elemento se encarga de agrupar todos los demás elementos permitiéndonos aplicar el
-			modelo de caja al cuerpo y designar su posición horizontal, como veremos más adelante. <br><br>
+			modelo de caja al cuerpo y designar su posición horizontal, como veremos más adelante. <br><br><br>
 			
 			 <b> Hágalo usted mismo:</b> Compare el código del Listado 1-18 del Capítulo 1 con el código en el Listado 2-25 de este capítulo y ubique las etiquetas de apertura y cierre del elemento <.div> utilizado para agrupar al resto.También compruebe cuáles elementos se encuentran ahora identificados con el atributo id y cuáles con el atributo class. Confirme que los valores de los atributos id son únicos para cada etiqueta. También necesitará reemplazar el código en el archivo HTML creado anteriormente por el del Listado 2-25 para aplicar los siguientes estilos CSS. <br><br>
 
@@ -769,9 +771,12 @@
 						padding: 0px;
 					}
 				</code>
-			</pre>
-			<figure><b>Listado 2-26.</b> Regla CSS general.</figure>
+			</pre><br>
+			
 		</p><br><br>
+		
+		<div class="figura"><b>Listado 2-26.</b> Regla CSS general.</div>
+
 		<p>
 			Normalmente, para la mayoría de los elementos, necesitamos personalizar los márgenes o simplemente mantenerlos al mínimo. Algunos elementos por defecto tienen márgenes que son diferentes de cero y en la mayoría de los casos demasiado amplios. A medida que avanzamos en la creación de nuestro diseño encontraremos que la mayoría de los elementos utilizados deben tener un margen de 0 pixeles. Para evitar el tener que repetir estilos constantemente, podemos utilizar el selector universal. <br><br>
 
@@ -1051,6 +1056,7 @@
 				</p>  
 			</p>
 		</p><hr><br><br>
+
 		<p>
 			<h2 id="25">Section y aside</h2>
 			<p>
@@ -1108,26 +1114,13 @@
 				un fondo gris y configuramos un margen interno de 20 pixeles. Como resultado final, el
 				ancho de esta caja será de 220 pixeles más 40 pixeles agregados por la propiedad
 				padding (los márgenes de los lados fueron declarados a 0px). <br><br>
-
-				<figure><b>Conceptos básicos: </b>El tamaño de un elemento y sus márgenes son agregados para
-				obtener el valor real ocupado en pantalla. Si tenemos un elemento de 200 pixeles
-				de ancho y un margen de 10 pixeles a cada lado, el área real ocupada por el
-				elemento será de 220 pixeles. El total de 20 pixeles del margen es agregado a los
-				200 pixeles del elemento y el valor final es representado en la pantalla. Lo mismo
-				pasa con las propiedades padding y border. Cada vez que agregamos un borde a
-				un elemento o creamos un espacio entre el contenido y el borde usando padding
-				esos valores serán agregados al ancho del elemento para obtener el valor real
-				cuando el elemento es mostrado en pantalla. Este valor real es calculado con la
-				fórmula: tamaño + márgenes + márgenes internos + bordes.</figure> <br><br>
-
-				<figure><b>Hágalo usted mismo: </b>Lea el código del Listado 2-25. Controle cada regla CSS creada
-				hasta el momento y busque en la plantilla los elementos HTML correspondientes a
-				cada una de ellas. Siga las referencias, por ejemplo las claves de los elementos
-				(como h1) y los atributos id (como cabecera), para entender cómo trabajan las
-				referencias y cómo los estilos son asignados a cada elemento.</figure><br><br>
 			</p>
+		</p><hr><br><br>
 
-		</p><hr><br><br> 
+				
+			
+
+		 
 		<p>
 			<h2 id="26">Footer</h2>
 			<p>
@@ -1144,8 +1137,9 @@
 							}
 						</code>
 					</pre>
-					<figure><b>Listado 2-34.</b> Otorgando estilos a <.footer> y recuperando el normal flujo del documento.</figure>
+					
 			</p>
+			<div class="figura"><b>Listado 2-34.</b> Otorgando estilos a <.footer> y recuperando el normal flujo del documento.</div>
 			<p>
 				La regla del Listado 2-34 declara un borde de 2 pixeles en la parte superior de
 				<.footer>, un margen interno (padding) de 20 pixeles, y centra el texto dentro del

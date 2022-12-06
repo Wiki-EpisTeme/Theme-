@@ -3,58 +3,43 @@ html{
     font-size: 25px;
     background-color: rgba(255, 255, 255, 0);
     height: auto;
+    display: block;
 }
 bodfy{
     justify-content: center;
 }
 header{
-    display:grid;
-    grid-template-areas: "header header header";
+    grid-auto-flow: initial;
+    margin: auto;
     text-align: center;
-    margin-top: 20%;
-    margin-bottom: 25%;
-
 }
 .cabeza{
-    display: block;
-    margin-left: auto;
-    text-align: center;
     border-bottom: thin solid;
-    padding-right: 10%;
 }
-
-
-
-
-
 .caja-indice{
     display: grid;
-    grid-template-areas: "caja-1 caja-2";
-    float: left;
+    margin: auto;
     list-style-type: none;
-    font-family: sans-serif;
     width: auto;
     height: auto;
-    margin: auto;
-    justify-content: revert;
-    grid-column-gap: 30%;
-    margin-left: 9%;
+    justify-self: center;
 }
+
 .caja-1{
-    display: block;
-    float: left;
-    margin-left: 40%;
-    width: 500px;
-    min-width: 60%;
-    justify-content: revert;
+    display: grid;
+    margin: auto;
+    width: auto;
+    min-width: 40%;
+    background-color: brown;
 }
 .caja-2{
+    
+    display: grid;
+    margin: auto;
+    width: auto;
+    min-width:40%;
     list-style-type: none;
-    display: block;
-    float: right;
-    width: 500px;
-    min-width:10%;
-
+    background-color: brown;
 }
 
 a{
@@ -74,46 +59,57 @@ a{
     padding-left: 3rem;
     font-size: 20px;
 }
+
+
 article{
+    display: block;
     margin: auto;
-    text-align: left;
-    margin: auto;
-    width: 50rem;
+    text-align: center;
+    width: auto;
     height: auto;
     min-width: 20%;
 }
-p{
-    text-align: justify;
+p, parrafo{
+    display: block;
     margin: auto;
-    width: auto;
-    min-width: 20%;
-
-
-
+    text-align: justify;
+    width: 70%;
+    min-width: 50%;
 }
 hr{
+    display: grid;
+    margin: auto;
     color: brown;
-    max-width: 70%;
-    min-width: min-content;
+    min-width: 20%;
+    border-width: 10px;
 }
 .lista{
-    text-align: center;
+    display: grid;
     margin: auto;
     width: auto;
     max-width: 40%;
 }
-h3, h2, h1, figure{
+h2{
     text-align: center;
 }
-hr{
-    color: brown;
-    border-width: 10px;
+pre,code{
+    width: auto;
+    display: grid;
+    margin: auto;
+    text-align: left;
+    font-size: 10px;
+}
+figure, figura{
+    margin: auto;
+    text-align: justify;
 }
 img{
     margin-left: 5%;
     width: 25rem;
 }
 .botom-de-subir{
+    display: grid;
+    margin: auto;
     position: fixed;
     top: 90%;
     left: 90%;
@@ -121,24 +117,14 @@ img{
 .pie{
     font-size: 10px;
     position: static;
-    top: 90%;
+    bottom: 50%;
     left: 1rem;
 }
-.ejemplos-largos{
-    font-size: 15px;
-    position: revert;
-    left: 20%;
-    margin: auto;
-    width: auto;
-    max-width: 70%;
-
-}
-ul{
+ulgg{
     margin-left: 20%;
     text-align: justify;
     max-width: 60rem;
     min-width: initial;
-
 }
 
 
