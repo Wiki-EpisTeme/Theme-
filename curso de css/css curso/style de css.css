@@ -1,36 +1,36 @@
 html{
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 12px;
     background-color: rgba(255, 255, 255, 0);
     height: auto;
-    display: block;
-}
-bodfy{
-    justify-content: center;
+    width: auto;
 }
 header{
     grid-auto-flow: initial;
     margin: auto;
     text-align: center;
+    font-size: 24px;
 }
 .cabeza{
     border-bottom: thin solid;
+    margin-bottom: 50px;
 }
 .caja-indice{
     display: grid;
-    margin: auto;
+    
     list-style-type: none;
     width: auto;
     height: auto;
-    justify-self: center;
+    
 }
 
 .caja-1{
     display: grid;
     margin: auto;
+    grid-row-start: 1;
     width: auto;
     min-width: 40%;
-    background-color: brown;
+    background-color: d4d4d4;
 }
 .caja-2{
     
@@ -39,7 +39,10 @@ header{
     width: auto;
     min-width:40%;
     list-style-type: none;
-    background-color: brown;
+    background-color: d4d4d4;
+    grid-row-end: 2;
+    position: relative;
+    top: -46rem;
 }
 
 a{
@@ -47,17 +50,17 @@ a{
 }
 .elemento0{
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 24px;
 }
 .elemento{
     color: black;
-    padding-left: 1rem;
-    font-size: 25px;
+    padding-left: 2rem;
+    font-size: 18px;
 }
 .elemento1{
     color: black;
-    padding-left: 3rem;
-    font-size: 20px;
+    padding-left: 5rem;
+    font-size: 12px;
 }
 
 
@@ -67,50 +70,48 @@ article{
     text-align: center;
     width: auto;
     height: auto;
-    min-width: 20%;
+    max-width: 80rem;
+    min-width: initial;
 }
-p, parrafo{
+p, .parrafo{
     display: block;
     margin: auto;
     text-align: justify;
     width: 70%;
-    min-width: 50%;
+    max-width: 80rem;
+    min-width: initial;
+    
 }
 hr{
-    display: grid;
-    margin: auto;
-    color: brown;
-    min-width: 20%;
-    border-width: 10px;
+    width: 0px;
+}
 }
 .lista{
-    display: grid;
+    display: block;
     margin: auto;
     width: auto;
-    max-width: 40%;
 }
 h2{
     text-align: center;
 }
 pre,code{
     width: auto;
-    display: grid;
+    display: block;
     margin: auto;
     text-align: left;
     font-size: 10px;
 }
-figure, figura{
-    margin: auto;
-    text-align: justify;
+figure, .figura{
+    width: auto;
 }
 img{
-    margin-left: 5%;
-    width: 25rem;
+    display: block;
+    margin: auto;
+    width: auto;
 }
 .botom-de-subir{
     display: grid;
     margin: auto;
-    position: fixed;
     top: 90%;
     left: 90%;
 }
@@ -120,10 +121,11 @@ img{
     bottom: 50%;
     left: 1rem;
 }
-ulgg{
-    margin-left: 20%;
+ul{
+    display: block;
+    margin: auto;
     text-align: justify;
-    max-width: 60rem;
+    max-width: 40rem;
     min-width: initial;
 }
 
