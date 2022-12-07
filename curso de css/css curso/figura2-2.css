@@ -1,56 +1,65 @@
 .figura2-2{
+	display: block;
+	margin: auto;
 	border: 10px solid black;
-	grid-template-areas: "cabecera cabecera cabecera";
-	width: 900px;
-	height: 1200px;
+	width: 70%;
+	height: auto;
 	text-align: center;
-
+	color: #178843;
+	font-size: 34px;
 	
 }
 .cabecera{
-	grid-template-areas: "cabecera cabecera cabecera";
-	display: grid;
+	display:grid;
+	grid-row-start: ;
 	text-align: center;
-	background-color: brown;
-	margin: 1%;
+	background-color: #808080;
+	margin: 10px;
 	height: 100px;
 
 }
 .cabecera2{
-	grid-template-areas: "cabecera2 cabecera2 cabecera2";
+	grid-row-start: ;
 	display: grid;
 	text-align: center;
-	background-color: brown;
-	margin: 1%;
+	background-color: #808080;
+	margin: 10px;
 	height: 50px;
 }
 .cuerpo{
-	display: block;
-	text-align: center;
-	background-color: brown;
-	margin-right: 0%;
+	display: grid;
+	grid-auto-flow: center;
+	background-color: #808080;
+	margin: 10px;
+	width: auto;
+}
+.cuerpo1{
+	display: grid;
+	grid-row-start: 1;
+	background-color: #d4d4d4;
 	width: 250px;
 	height: 500px;
-	padding-right: 5rem;
+	margin: 20px;
+
 }
 .cuerpo2{
-	display: block;
-	float: right;
-	text-align: center;
-	background-color: brown;
-	margin: 1%;
+	display: grid;
+	grid-row-end: 2;
 	width: 250px;
 	height: 500px;
-	padding-right: 5rem;
+	background-color: #d4d4d4;
+	margin: 20px;
+	
 }
 .pies{
 	display: grid;
+	grid-row-start: 1;
 	text-align: center;
-	background-color: brown;
-	margin: 1%;
-	grid-template-areas: "pies pies pies";
-	width: 880px;
-	height: 100px;
+	background-color: #808080;
+	margin: 10px;
+	
+	width: auto;
+	height: auto;
 }
 .uno{
 
