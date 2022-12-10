@@ -26,15 +26,44 @@ nav h3{
 nav{
 	display: grid;
 	margin: auto;
+	gap: 5rem;
 
 
 	background-color:;
+}
+.elemento0{
+	isplay: grid;
+
+	margin: auto;
+	
+	padding: 1rem;
+
+	width: 300px;
+
+	grid-row-start: 1;
+
+	border: 10px solid black;
+	border-radius: 2rem;
+
+	background-color: ;
+	text-align: center;
+	font-size: 30px;
+}
+.elemento0 p{
+	display: grid;
+	margin: auto;
+	
+	width: auto;
+	height: auto;
+	padding: 1rem;
+
+}
 }
 .elemento1{
 	display: grid;
 
 	margin: auto;
-	margin-bottom: 5rem;
+	
 	padding: 1rem;
 
 	width: 300px;
@@ -111,9 +140,10 @@ nav{
 
 }
 .elemento4{
-	display: grid;
+	isplay: grid;
 
 	margin: auto;
+	
 	padding: 1rem;
 
 	width: 300px;
