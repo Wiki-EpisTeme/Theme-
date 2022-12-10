@@ -1,56 +1,68 @@
 html{
 	display: grid;
 	margin: auto;
+	background-color: black;
+	color: aliceblue;
 }
 header{
-	display: grid;
-
+	display: flex;
 
 	margin: auto;
-	margin-bottom: 5rem;
+	margin-bottom: 25rem;
+
+	
 
 	text-align: center;
 	font-family: sans-serif;
+}
+h1{
+	margin: auto;
+
+	padding-left: 3%;
+	padding-right: 3%;
+	border-bottom: thick solid aliceblue;
 }
 a{
 	text-decoration: none;
 	font-size: 30px;
 }
-nav h3{
-	display: grid;
+hr{
 	margin: auto;
-	grid-row-start: 1;
-	text-align: center;
-	font-family: sans-serif;
+	width: 25rem;
+	max-width: 50%;
+	min-width:1%;
 }
 nav{
 	display: grid;
 	margin: auto;
+	justify-content: center;
 	gap: 5rem;
 
 
-	background-color:;
+	
 }
 .elemento0{
-	isplay: grid;
+	display: block;
 
 	margin: auto;
 	
 	padding: 1rem;
 
-	width: 300px;
+	
+	max-width: 300px;
+	min-width: none;
 
-	grid-row-start: 1;
+	
 
 	border: 10px solid black;
 	border-radius: 2rem;
 
-	background-color: ;
+	
 	text-align: center;
 	font-size: 30px;
 }
 .elemento0 p{
-	display: grid;
+	display: block;
 	margin: auto;
 	
 	width: auto;
@@ -58,7 +70,7 @@ nav{
 	padding: 1rem;
 
 }
-}
+
 .elemento1{
 	display: grid;
 
@@ -68,12 +80,12 @@ nav{
 
 	width: 300px;
 
-	grid-row-start: 1;
+	
 
 	border: 10px solid black;
 	border-radius: 2rem;
 
-	background-color: ;
+	
 	text-align: center;
 	font-size: 30px;
 }
@@ -95,12 +107,12 @@ nav{
 
 	width: 300px;
 
-	grid-row-start: 2;
+	
 
 	border: 10px solid black;
 	border-radius: 2rem;
 
-	background-color: ;
+	
 	text-align: center;
 	font-size: 30px;
 }
@@ -121,12 +133,12 @@ nav{
 
 	width: 300px;
 
-	grid-row-start: 1;
+	
 
 	border: 10px solid black;
 	border-radius: 2rem;
 
-	background-color: ;
+	
 	text-align: center;
 	font-size: 30px;
 }
@@ -140,7 +152,7 @@ nav{
 
 }
 .elemento4{
-	isplay: grid;
+	display: grid;
 
 	margin: auto;
 	
@@ -148,12 +160,12 @@ nav{
 
 	width: 300px;
 
-	grid-row-start: 2;
+	
 
 	border: 10px solid black;
 	border-radius: 2rem;
 
-	background-color: ;
+	
 	text-align: center;
 	font-size: 30px;
 }
@@ -174,12 +186,10 @@ nav{
 
 	width: 300px;
 
-	grid-row-start: 2;
 
 	border: 10px solid black;
 	border-radius: 2rem;
 
-	background-color: ;
 	text-align: center;
 	font-size: 30px;
 }
