@@ -5,9 +5,10 @@ html{
 	color: aliceblue;
 }
 header{
-	display: flex;
+	display: grid;
 
 	margin: auto;
+	margin-top: 2em;
 	margin-bottom: 25rem;
 
 	
@@ -35,7 +36,7 @@ hr{
 nav{
 	display: grid;
 	margin: auto;
-	justify-content: center;
+	flex-direction: column;
 	gap: 5rem;
 
 
