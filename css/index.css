@@ -1,17 +1,14 @@
 html{
 	display: grid;
 	margin: auto;
-	background-color: black;
+	background: white;
 	color: aliceblue;
 }
 header{
 	display: grid;
 
 	margin: auto;
-	margin-top: 2em;
-	margin-bottom: 25rem;
-
-	
+	margin-top: 2rem;
 
 	text-align: center;
 	font-family: sans-serif;
@@ -29,101 +26,61 @@ a{
 }
 hr{
 	margin: auto;
-	width: 25rem;
+	width: rem;
 	max-width: 50%;
 	min-width:1%;
 }
 nav{
-	display: grid;
+	display: flex;
 	margin: auto;
-	flex-direction: column;
-	gap: 5rem;
+	align-self: auto;
+	row-gap: 50rem;
+	max-width: 100%;
+	min-width: 50%;
 
 
-	
-}
-.elemento0{
-	display: block;
-
-	margin: auto;
-	
-	padding: 1rem;
-
-	
-	max-width: 300px;
-	min-width: none;
-
-	
-
-	border: 10px solid black;
-	border-radius: 2rem;
-
-	
-	text-align: center;
 	font-size: 30px;
 }
-.elemento0 p{
+.elemento6{
 	display: block;
+
 	margin: auto;
 	
-	width: auto;
-	height: auto;
-	padding: 1rem;
+	text-align: center;
+	
+}
+.elemento6 p{
+
 
 }
 
 .elemento1{
-	display: grid;
+	display: flex;
 
 	margin: auto;
-	
-	padding: 1rem;
 
-	width: 300px;
+	align-self: center;
 
-	
-
-	border: 10px solid black;
-	border-radius: 2rem;
-
-	
 	text-align: center;
 	font-size: 30px;
 }
 
 .elemento1 p{
-	display: grid;
-	margin: auto;
-	
-	width: auto;
-	height: auto;
-	padding: 1rem;
 
+	
 }
 .elemento2{
-	display: grid;
+	display: flex;
 
 	margin: auto;
 	padding: 1rem;
 
-	width: 300px;
+	align-self: center;
 
-	
-
-	border: 10px solid black;
-	border-radius: 2rem;
-
-	
 	text-align: center;
 	font-size: 30px;
 }
 .elemento2 p{
-	display: grid;
-	margin: auto;
-	border: thin solid cyan;
-	width: auto;
-	height: auto;
-	padding: 1rem;
 
 }
 .elemento3{
@@ -132,13 +89,7 @@ nav{
 	margin: auto;
 	padding: 1rem;
 
-	width: 300px;
-
-	
-
-	border: 10px solid black;
-	border-radius: 2rem;
-
+	align-self: center;
 	
 	text-align: center;
 	font-size: 30px;
@@ -156,50 +107,21 @@ nav{
 	display: grid;
 
 	margin: auto;
-	
-	padding: 1rem;
 
-	width: 300px;
-
-	
-
-	border: 10px solid black;
-	border-radius: 2rem;
-
-	
 	text-align: center;
 	font-size: 30px;
 }
 .elemento4 p{
-	display: grid;
-	margin: auto;
-	border: thin solid cyan;
-	width: auto;
-	height: auto;
-	padding: 1rem;
 
 }
 .elemento5{
 	display: grid;
 
 	margin: auto;
-	padding: 1rem;
-
-	width: 300px;
-
-
-	border: 10px solid black;
-	border-radius: 2rem;
 
 	text-align: center;
 	font-size: 30px;
 }
 .elemento5 p{
-	display: grid;
-	margin: auto;
-	border: thin solid cyan;
-	width: auto;
-	height: auto;
-	padding: 1rem;
 
 }
