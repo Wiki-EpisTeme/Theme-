@@ -2,8 +2,11 @@ html{
 	display: grid;
 	margin: auto;
 	background: black;
-	color: aliceblue;
+	color: white;
 	font-family: monospace;
+}
+body{
+	color: white;
 }
 header{
 	display: grid;
@@ -22,10 +25,11 @@ h1{
 	
 }
 h4{
-	color: black;
+	color: white;
+
 	font-size: 1.2rem;
 
-	border: thin solid cyan;
+	border: thin solid white;
 	border-bottom: none;
 	padding: 1rem;
 	margin: 1rem 0px 0px 0px;
@@ -37,21 +41,82 @@ hr{
 	width: rem;
 	max-width: 50%;
 	min-width:1%;
+	color: aliceblue;
 }
 a{
 	color: white;
 	text-decoration: none;
-
-	border: thin solid black;
+	padding: 0px 2rem 0px 2rem;
+	
+	width: 3rem;
 }
  ul{
  	border-top: none;
- 	border: thin solid cyan;
+ 	border: thin solid white;
  	padding-bottom: 10rem;
  	margin: 0rem 0px 0px 0px;
-
-
+ 	color: white;
 }
+li p{
+	color: white;
+}
+
+
+
+
+aside{
+	display: grid;
+	margin: autos;
+	padding: 0px 1rem 0px 1rem;
+
+
+	position: fixed;
+	top: 20%;
+	left:89%;
+
+	max-width: 50%;
+	min-width: 1%;
+
+	gap: 1rem;
+
+	
+	background:;
+}
+.whatsapp img{
+	padding: 0px 0px 2rem 0px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -87,82 +152,12 @@ nav{
 	text-align: center;
 	font-size: 30px;
 
-
-
-	border: thin solid white;
-	border-radius: 10%;
-}
-
-.elemento2{
-	display: grid;
-
-	margin: 5rem 10px 0px 10px;
-	padding: 10%;
-
-	text-align: center;
-	font-size: 30px;
-
-
+	color: white;
 
 	border: thin solid white;
 	border-radius: 10%;
 }
 
-.elemento3{
-	display: grid;
-
-	margin: 5rem 10px 0px 10px;
-	padding: 10%;
-
-	text-align: center;
-	font-size: 30px;
-
-	border: thin solid white;
-	border-radius: 10%;
-}
-
-.elemento4{
-	display: grid;
-
-	margin: 5rem 10px 0px 10px;
-	padding: 10%;
-
-	text-align: center;
-	font-size: 30px;
-
-
-
-	border: thin solid white;
-	border-radius: 10%;
-}
-
-.elemento5{
-	display: grid;
-
-	margin: 5rem 10px 0px 10px;
-	padding: 10%;
-
-	text-align: center;
-	font-size: 30px;
-
-
-
-	border: thin solid white;
-	border-radius: 10%;
-}
-
-.elemento6{
-	display: grid;
-
-	margin: 5rem 10px 0px 10px;
-	padding: 10%;
-
-	text-align: center;
-	font-size: 30px;
-
-
-
-	border: thin solid white;
-	border-radius: 10%;
-	
+.caja-de-titulo{
+	border: thin solid black;
 }
